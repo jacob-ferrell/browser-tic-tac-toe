@@ -14,13 +14,34 @@ body {
 }
 .header {
     display: flex;
-    height: 80px;
+    height: 120px;
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: rgb(65, 65, 65);
+    background-image: linear-gradient(rgb(102, 102, 102), rgb(43, 43, 43));
     color: white;
     font-size: 32px;
+}
+.input-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input {
+    background-color: rgb(211, 211, 211);
+    border: none;
+}
+#submit-names {
+    align-self: center;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(211, 211, 211);
+}
+#submit-names:hover {
+    background-color: rgba(29, 219, 115, 0.979);
 }
 .board-container {
 
@@ -28,8 +49,12 @@ body {
     grid-template: repeat(3, 150px) / repeat(3, 150px);
 }
 .board-container > div {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid white;
+
+    font-size: 80px;
 }
 .board-container > div:hover {
     background-color: rgba(34, 129, 129, 0.541);
@@ -46,4 +71,14 @@ body {
 }
 #r2c0, #r2c1, #r2c2 {
     border-bottom: none;
+}
+.player1 {
+    color:rgba(1, 189, 1, 0.979)
+}
+.player2 {
+    color:rgb(206, 13, 231)
+}
+#prompt {
+    color: white;
+    font-size: 24px;
 }

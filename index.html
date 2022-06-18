@@ -19,10 +19,17 @@
             <label for="player2-name">Player 2 Name:</label>
             <input type="text" name="player2-name" id="player2-name">
         </div>
-        <button type="button" id="submit-names">Submit</button>
+        <button type="button" id="submit-names"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+        </svg>Start Game</button>
     </div>
     <div id="prompt"></div>
     <div class="board-container"></div>
-    <div class="prompt"></div>
+    <div class="new-game-container">
+        <button id="new-game" onclick="location.reload();"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+        </svg>&nbsp;&nbsp;New Game</button>
+    </div>
+    <div class="footer">Copyright©2022 jacob-ferrell</div>
 </body>
 </html>

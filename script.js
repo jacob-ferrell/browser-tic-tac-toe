@@ -138,6 +138,7 @@ const getNames = (() => {
         if (player1Name && player2Name) {
             const newGame = Game();
             document.querySelector('.input-container').remove();
+            document.getElementById('new-game').style.display = 'flex';
         }
         })
     
